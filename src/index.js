@@ -25,13 +25,15 @@ class App extends Component {
         const onVideoSearch = _.debounce(term => this.onVideoSearch(term), 400);
 
         return (
-            <div>
+            <div class="container container-fluid">
                 <SearchBar onSearchTermChange={term => onVideoSearch(term)} />
-                <VideoDetail video={this.state.selectedVideo} />
-                <VideoList
-                    onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
-                    videos={this.state.videos}
-                />
+                <div class="row">
+                    <VideoDetail video={this.state.selectedVideo} />
+                    <VideoList
+                        onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
+                        videos={this.state.videos}
+                    />
+                </div>
             </div>
         );
     }
