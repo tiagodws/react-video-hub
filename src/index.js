@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import YTSearch from "youtube-api-search";
 import _ from "lodash";
 
+import "../style/style.css";
+
 import SearchBar from "./components/search-bar";
 import VideoList from "./components/video-list";
 import VideoDetail from "./components/video-detail";
@@ -25,9 +27,9 @@ class App extends Component {
         const onVideoSearch = _.debounce(term => this.onVideoSearch(term), 400);
 
         return (
-            <div class="container container-fluid">
+            <div className="container container-fluid">
                 <SearchBar onSearchTermChange={term => onVideoSearch(term)} />
-                <div class="row">
+                <div className="row">
                     <VideoDetail video={this.state.selectedVideo} />
                     <VideoList
                         onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
