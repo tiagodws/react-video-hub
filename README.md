@@ -3,4 +3,4 @@ Projeto de pesquisa e exibição de vídeos feito durante o curso https://www.ud
 
 ## Demonstração
 
-https://tiagodws-react-video-hub.herokuapp.com/
+https://tiagodws-video-hub.herokuapp.com/
