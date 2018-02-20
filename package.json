@@ -1,7 +1,6 @@
 {
     "name": "react-video-hub",
     "version": "1.0.0",
-    "main": "dist/index.js",
     "repository": "git@github.com:tiagodws/react-video-hub.git",
     "scripts": {
         "start": "webpack-dev-server --watch",
