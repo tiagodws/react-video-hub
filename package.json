@@ -6,7 +6,8 @@
     "scripts": {
         "start": "webpack-dev-server --watch",
         "build": "webpack -p",
-        "postinstall": "npm run build"
+        "postinstall": "npm run build",
+        "heroku-prebuild": "npm install --dev"
     },
     "author": "Tiago Dionesto",
     "devDependencies": {
